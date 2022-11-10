@@ -1,85 +1,106 @@
-.flexMain {
-  display:flex;
-  align-items: center
+/* Navbar CSS */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+
+   body{
+
+    background-color: #eee;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+   
+
+   }
+
+
+
+   ul{
+
+    list-style: none;
+    display: flex;
+        margin-bottom: 0;
+   }
+
+    
+
+    .social-icon{
+
+          height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 7px;
+    margin-right: 11px;
+    cursor: pointer;
+      
+    }
+
+    .social-twitter{
+
+      background-color: #55acee;
+    }
+
+
+    .social-facebook{
+
+      background-color: #3b5999;
+    }
+
+
+    .social-linkedin{
+
+      background-color: #0077B5;
+    }
+
+
+    .social-google{
+
+      background-color: #dd4b39;
+    }
+
+    .social-instagram{
+
+      background-color: #dd4b39;
+    }
+
+    .social-icon i{
+
+      transition: 0.4s all;
+    }
+
+    .social-icon:hover i{
+
+      transform: scale(1.1);
+
+    }
+
+
+/* Carousel CSS */
+/*
+Removes white gap between slides
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+
+.carousel {
+  background:#444;
+  font-family: 'Montserrat', sans-serif;
 }
-.flex1 { flex:1 }
-.flex2 { flex:2 }
-.flex3 { flex:3 }
- 
-button.siteLink {
-  margin-left:-5px;
-  border:none;
-  padding:24px;
-  display:inline-block;
-  min-width:115px;
-}
-.whiteLink {
-  background : #fff;
-}
-.whiteLink:active {
-  background : #000;
-  color: #fff;
-}
-.blackLink {
-  color: #fff;
-  background:#232323;
-  transition: all 300ms linear;
-}
- 
-.blackLink:active {
-  color: #000;
-  background:#fff
-}
-#siteBrand {
-  font-family: impact;
-  letter-spacing : -1px;
-  font-size:32px;
-  color:#252525;
-  line-height : 1em;
-}
-#menuDrawer {
-  background:#fff;
-  position:fixed;
-  height:100vh;
-  overflow:auto;
-  z-index:12312;
-  top:0;
-  left:0;
-  border-right:1px solid #eaeaea;
-  min-width:25%;
-  max-width:320px;
+
+/*
+Forces image to be 100% width and not max width of 100%
+*/
+.carousel-item .img-fluid {
   width:100%;
-  transform : translateX(-100%);
-  transition : transform 200ms linear;
+  height:auto;
 }
-#mainNavigation {
-  transition : transform 200ms linear;
-  background : #fff;
-}
-.drawMenu > #menuDrawer {
-  transform : translateX(0%);
-}
-.drawMenu > #mainNavigation {
-  transform : translateX(25%);
-}
-.fa-times {
-  cursor : pointer
-}
-a.nav-menu-item:hover {
-  margin-left:2px;
-  border-left:10px solid black;
-}
-a.nav-menu-item{
-  transition:border 200ms linear;
-  text-decoration:none;
-  display:block;
-  padding:18px;
-  padding-left:32px;
-  border-bottom:1px solid #eaeaea;
-  font-weight:bold;
-  color:#343434
-}
-select.noStyle {
-  border:none;
-  outline:none
+
+/* 
+anchors are inline so you need ot make them block to go full width
+*/
+.carousel-item a {
+  display: block;
+  width:100%;
 }

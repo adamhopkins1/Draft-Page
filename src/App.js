@@ -1,10 +1,11 @@
 import './index.css';
-import React from './components/LandingPage';
+import React from 'react';
+import Nav from './components/Nav';
 
 function App() {
   return (
     <div className="App">
-      <LandingPage/>
+      <Nav/>
     </div>
   );
 }
