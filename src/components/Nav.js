@@ -95,7 +95,7 @@ const Nav = () => {
             <div class="carousel-item">
                 <a href="https://www.pewresearch.org/social-trends/2019/02/14/millennial-life-how-young-adulthood-today-compares-with-prior-generations-2/">
   
-                 <img src="https://images.pexels.com/photos/3617872/pexels-photo-3617872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="responsive image" class="d-block img-fluid"/>
+                 <img src="https://images.pexels.com/photos/8730069/pexels-photo-8730069.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="responsive image" class="d-block img-fluid"/>
 
 
                     <div class="carousel-caption justify-content-center align-items-center">
